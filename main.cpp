@@ -1,9 +1,8 @@
 #include <iostream>
-#include "windows.h"
 
 int main(){
     int option = 0;
-    float height, tb_radius, mid_radius, result, x;
+    float height, tb_radius, mid_radius, result, x = 0;
     /*height = 1;
     tb_radius = 1;
     mid_radius = 0;
@@ -12,16 +11,16 @@ int main(){
         std::cout << " Meni:" << std::endl;
         std::cout << "1. Parametri bacve " << std::endl;
         std::cout << "2. Popunjenost bacve " << std::endl;
-        cin>> option;
+        std::cin >> option;
             switch(option){
                 case 1:
-                    std::cout<< "Parametri bacve:"<< std::endl; 
-                    std::cout<< "Visina:"<< height << std::endl;
-                    cin>> height; 
-                    std::cout<< "Gorni/Donji radius:"<< tb_radius << std::endl;
-                    cin>> tb_radius;
-                    std::cout<< "Sredisnji radius:"<< mid_radius << std::endl;
-                    cin>> mid_radius;
+                    std::cout << "Parametri bacve:"<< std::endl; 
+                    std::cout << "Visina:"<< height << std::endl;
+                    std::cin >> height; 
+                    std::cout << "Gorni/Donji radius:"<< tb_radius << std::endl;
+                    std::cin >> tb_radius;
+                    std::cout << "Sredisnji radius:"<< mid_radius << std::endl;
+                    std::cin >> mid_radius;
                     break;
                 case 2:    
 
@@ -37,7 +36,7 @@ int main(){
                  std::cout << result << "%" << std::endl;    
 
                  return 0;
-                        }
-        }                 
+            }
+        }while(true);
 
 }
