@@ -2,7 +2,9 @@
 
 int main(){
     int option = 0;
-    float height, tb_radius, mid_radius, result, x = 0;
+    float height, tb_radius, mid_radius, result, x = 1;
+
+    while(true){
     /*height = 1;
     tb_radius = 1;
     mid_radius = 0;
@@ -21,7 +23,7 @@ int main(){
                     std::cin >> tb_radius;
                     std::cout << "Sredisnji radius:"<< mid_radius << std::endl;
                     std::cin >> mid_radius;
-                    break;
+                 break;
                 case 2:    
 
                     if(mid_radius != 0){
@@ -34,9 +36,8 @@ int main(){
     
                  std::cout << x << std::endl;    
                  std::cout << result << "%" << std::endl;    
-
                  return 0;
             }
         }while(true);
-
+    }
 }
