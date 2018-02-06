@@ -2,10 +2,9 @@
 
 int main(){
     int option = 0;
-    int back = 0;
     float height, tb_radius, mid_radius, result, x = 1;
 
-    while(true){
+    
     /*height = 1;
     tb_radius = 1;
     mid_radius = 0;
@@ -16,7 +15,6 @@ int main(){
         std::cout << "2. Popunjenost bacve " << std::endl;
         std::cin >> option;
             switch(option){
-                while(back == 1){
                     case 1:
                         std::cout << "Parametri bacve:"<< std::endl; 
                         std::cout << "Visina:"<< height << std::endl;
@@ -25,9 +23,8 @@ int main(){
                         std::cin >> tb_radius;
                         std::cout << "Sredisnji radius:"<< mid_radius << std::endl;
                         std::cin >> mid_radius;
-                        std::cout << "Ako zelite ponovno unijeti parametre stisnte broj 1"<< std::endl;
-                        std::cin >> back
-                 break;}
+                        std::cout << "Ako zelite ponovno unijeti parametre stisnte broj 1"<< std::endl;                        
+                 break;
                  
                     case 2:    
 
@@ -45,6 +42,6 @@ int main(){
                  std::cout << result << "%" << std::endl;    
                  return 0;
             }
-        }while(true);
+        }while(true){}   
+       
     }
-}
